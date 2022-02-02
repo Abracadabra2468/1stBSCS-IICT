@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+		function check()
+		{
+			var input;
+			input = document.getElementById('in').value;
+			if(input == 1)
+				document.getElementById('out').innerHTML= "<img src='Images/1.png' height='100px' width='100px'>"
+			else if(input == 2)
+				document.getElementById('out').innerHTML= "<img src='Images/2.png' height='100px' width='100px'>"
+			else if(input == 3)
+				document.getElementById('out').innerHTML= "<img src='Images/3.png' height='100px' width='100px'>"
+
+
+		}
+
+	</script>
+</head>
+<body>
+
+
+
+<input type="text" name="input" id="in" placeholder="enter number (1-3)"/>
+<button onclick="check()">Load</button>
+<div id="out"></div>
+</body>
+</html>
